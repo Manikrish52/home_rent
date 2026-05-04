@@ -10,15 +10,19 @@ export default function Router() {
     <AuthProvider>
       <HashRouter>
         <Routes>
-          {/* Public route */}
-          <Route path="/" element={<LoginPage />} />
+
+          {/* Public routes */}
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/" element={<Navigate to="/login" replace />} />
 
           {/* Protected routes */}
           <Route element={<ProtectedRoute />}>
             <Route path="/home" element={<HomePage />} />
           </Route>
 
+          {/* Fallback */}
           <Route path="*" element={<Navigate to="/login" replace />} />
+
         </Routes>
       </HashRouter>
     </AuthProvider>
