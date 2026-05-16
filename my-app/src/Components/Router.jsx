@@ -3,6 +3,8 @@ import { AuthProvider } from '../context/AuthContext';
 import LoginPage from '../Pages/LoginPage';
 import HomePage from '../Pages/HomePage';
 import ProtectedRoute from './ProtectedRoute';
+import BestHouse from './BestHouse';
+import Dashboard from '../Pages/Dashboard';
 ;
 
 export default function Router() {
@@ -18,6 +20,8 @@ export default function Router() {
           {/* Protected routes */}
           <Route element={<ProtectedRoute />}>
             <Route path="/home" element={<HomePage />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/best-house" element={<BestHouse />} />
           </Route>
 
           {/* Fallback */}

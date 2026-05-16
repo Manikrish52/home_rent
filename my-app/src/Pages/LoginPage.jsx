@@ -17,7 +17,7 @@ export default function LoginPage() {
                 .then((res) => res.json())
                 .then((profile) => {
                     login(profile);           
-                    navigate('/home');            
+                    navigate('/dashboard');            
                 });
         },
         onError: () => console.error('Login failed'),
