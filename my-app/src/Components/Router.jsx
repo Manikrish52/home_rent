@@ -5,6 +5,7 @@ import HomePage from '../Pages/HomePage';
 import ProtectedRoute from './ProtectedRoute';
 import BestHouse from './BestHouse';
 import Dashboard from '../Pages/Dashboard';
+import LowCasehouse from './LowCasthouse';
 ;
 
 export default function Router() {
@@ -22,6 +23,9 @@ export default function Router() {
             <Route path="/home" element={<HomePage />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/best-house" element={<BestHouse />} />
+            <Route path="/lowcast-house" element={<LowCasehouse />} />
+            
+            
           </Route>
 
           {/* Fallback */}

@@ -29,7 +29,7 @@ const menuItems = [
   },
   {
     name: "Low Cost House",
-    path: "/low-cost-house",
+    path: "/lowcast-house",
   },
   {
     name: "High Cost House",
